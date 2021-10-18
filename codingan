@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menghitung Penyusutan</title>
+</head>
+<body>
+	<h1>Aplikasi Penghitung Penyusutan</h1>
+	<br><br>
+	<label for="">harga</label>
+	<input type="text" id="harga">
+	<br>
+	<br>
+	<label for="">residu</label>
+	<input type="text" id="residu">
+	<br>
+	<br>
+	<label for="">umur</label>
+	<input type="text" id="umur">
+	<br>
+	<br>
+	<label for="">hasil</label>
+	<input type="text" id="hasil">
+	<br>
+	<br>
+
+	<button onclick="fhitung()">hitung</button>
+
+	<script>
+		var harga =document.getElementById("harga");
+		var residu =document.getElementById("residu");
+		var umur =document.getElementById("umur");
+		var hasil =document.getElementById("hasil");
+
+		function fhitung(){
+			hasil.value = [Number(harga.value) - Number(residu.value)] / Number(umur.value);
+		}
+	</script>
+
+
+</body>
+</html>
